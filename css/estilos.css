@@ -17,8 +17,11 @@ body {
     align-items: center;
 }
 
+h1{
+    font-size: 30px;
+    text-align: center;
+}
 .logoSudoH {
-    font-family: 'Bricolage Grotesque', sans-serif;
     margin: 10px;
 }
 
@@ -29,7 +32,6 @@ nav {
 
 .menu li {
     display: inline-block;
-    color: #FFFFFF;
     text-decoration: none;
     text-align: center;
     left: 25%;
@@ -40,6 +42,7 @@ nav {
     color: black;
     text-decoration: none;
     display: inline-block;
+    list-style-type: none;
 }
 
 .menu li a:hover {
@@ -132,10 +135,25 @@ nav {
     text-align: center;
 }
 
-.linkUtiles img {
+.cah {
     align-items: baseline;
     margin: 5px;
     padding-left: 20px;
+    height: 4rem;
+}
+
+.pahf{
+    align-items: baseline;
+    margin: 5px;
+    padding-left: 20px;
+    height: 3rem;
+}
+
+.fih{
+    align-items: baseline;
+    margin: 5px;
+    padding-left: 20px;
+    height: 3rem;
 }
 
 .instagram {
@@ -151,4 +169,74 @@ nav {
 .facebook {
     width: 60px;
     margin: 0 0.2rem;
+}
+
+.listaDescargas li {
+    padding: 2px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.listaDescargas li a{
+    color: black;
+    text-decoration: none;
+}
+
+.sesion{
+    margin:0 20%;
+    width: 60%;
+}
+
+@media screen and (max-width: 500px){
+    .logoSudoH {
+        width: 1.5rem;
+        height: 1rem;
+        margin: 10px;
+    }
+    h1{
+        font-size: 10px;
+    }
+    .cah {
+        width: 2rem;
+        height: 1rem;
+    }
+    .pahf {
+        width: 3rem;
+        height: 1.5rem;
+    }
+    .fih {
+        width: 3rem;
+        height: 1rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .logoSudoH {
+        width: 4rem;
+        height: 5rem;
+        margin: 10px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .cah {
+        width: 4rem;
+        height: 2.5rem;
+    }
+    .pahf {
+        width: 7rem;
+        height: 2.5rem;
+    }
+    .fih {
+        width: 6rem;
+        height: 2.5rem;
+    }
+    .logoSudoF {
+        display: none;
+    }
+    .documentos{
+        font-size: 10px;
+    }
+    .documentos h5{
+        font-size: 15px;
+    }
 }
