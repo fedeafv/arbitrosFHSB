@@ -1,0 +1,26 @@
+.listaDescargas li {
+    padding: 2px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.listaDescargas li a{
+    color: black;
+    text-decoration: none;
+}
+
+.reglas{
+    @include titulos();
+}
+.cajaDescarga{
+    background: $colorCajas;
+
+        h2 {
+            @include titulos();
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+}

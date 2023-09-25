@@ -1,0 +1,36 @@
+.row {
+    .cajaHija {
+        background: $colorCajas;
+
+        h2 {
+            @include titulos();
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        img {
+            @include imagenchica();
+        }
+
+        label {
+            font-size: small;
+            margin: 1px;
+        }
+    }
+}
+
+.canchasLista {
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    font-size: 0.8rem;
+
+    .lugar {
+        font-weight: bold;
+        text-decoration: underline;
+        width: 100%;
+    }
+
+}

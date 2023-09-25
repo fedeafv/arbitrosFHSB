@@ -1,0 +1,19 @@
+@mixin logosPie ($alinearLogo, $margen, $padding, $alto){
+    align-items: $alinearLogo;
+    margin: $margen;
+    padding-left: $padding;
+    height: $alto;
+}
+@mixin titulos(){
+    background: $colorCajaTitulo;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin imagenchica(){
+    width: 4rem;
+            height: 4rem;
+            display: block; 
+            margin: auto;
+}

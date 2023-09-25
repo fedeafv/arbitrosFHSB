@@ -1,0 +1,15 @@
+.agenda {
+    display: flex;
+    justify-content: space-around;
+    .row {
+        background: $colorCajas;
+        margin: 3px;
+        h2 {
+            @include titulos();
+        }
+
+        img {
+            @include imagenchica();
+        }
+    }
+}

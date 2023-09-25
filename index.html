@@ -7,102 +7,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <meta name="description"
+        content="Pasar disponibilidad y consultar la agenda del torneo local de la Federación de Hockey del Sudoeste Bonaerense">
+    <meta name="keywords" content="disponibilidad, agenda,reglamentos, hockey">
+    <link rel="stylesheet" href="./css/estilossass.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Arbitros FHSB</title>
+    <title>Árbitros FHSB | Inicio</title>
 </head>
 
 <body>
     <header>
-        <div class="titulo">
-            <img class="logoSudoH" src="./img/logosudo.png" alt="logo sudoeste">
+        <div class="titulo m-3 p-3">
+            <a href="index.html"><img src="./img/logosudo.png" class="logoSudoF" alt="logo sudoeste"></a>
             <h1>Árbitros de la Federación de Hockey del Sudoeste Bonaerense</h1>
         </div>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="disponibilidad.html">Portal Árbitros</a></li>
-                <li><a href="descargas.html">Descargas</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="torneos.html">Agenda</a></li>
+            <ul class="nav nav-pills nav-fill menu">
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="disponibilidad.html">Portal Árbitros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="descargas.html">Descargas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="torneos.html">Agenda</a>
+                </li>
             </ul>
         </nav>
+        <h2 class="text-center m-3">Clubes afiliados</h2>
+        <div class="clubes m-3">
+            <img src="./img/alumni.png" alt="Club Alumni Coronel Pringles">
+            <img src="./img/boca.png" alt="Club Boca Juniors Coronel Suarez">
+            <img src="./img/byn.png" alt="Centro Blanco y Negro Coronel Suarez">
+            <img src="./img/cai.png" alt="Club Atlético Independiente de Puán">
+            <img src="./img/carhue.png" alt="Club Deportivo Sarmiento de Carhué">
+            <img src="./img/cds.png" alt="Club Deportivo Sarmiento de Coronel Suarez">
+            <img src="./img/CEF.png" alt="CEF 83 Pigüé">
+            <img src="./img/ceibo.png" alt="Club Ceibo-Comercio CASBAS-Guaminí">
+            <img src="./img/huang.png" alt="Club Huanguelén">
+            <img src="./img/pelota.png" alt="Club de Pelota Coronel Pringles">
+            <img src="./img/rugby.png" alt="Coronel Suarez Rugby Hockey Club">
+            <img src="./img/alem.png" alt="Club Alem Coronel Pringles">
+            <img src="./img/almaceneros.png" alt="Club Almaceneros Coronel Pringles">
+            <img src="./img/peñarol.png" alt="Club Peñarol Pigüé">
+            <img src="./img/saav.png" alt="Club San Martín de Saavedra">
+            <img src="./img/progreso.png" alt="Club El Progreso Coronel Suarez">
+        </div>
     </header>
-    <hr>
     <main>
-        <div class="container">
+        <section class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-xl-6 cajaHija">
-                    <h4 class="text-center">Proxima Fecha</h4>
-                    <embed src="./docs/proximafecha.pdf" type="application/pdf" width="100%" height="300px" />
+                    <h2 class="text-center m-1">Proxima Fecha</h2>
+                    <p class="text-center m-3">Consulta la próxima fecha y las designaciones haciendo click acá abajo
+                    </p>
+                    <a href="./docs/proximafecha.pdf" target="_blank"><img src="./img/agenda.png"
+                            alt="proxima fecha horarios"></a>
+                    <h2 class="text-center m-1">Resultados de la última fecha</h2>
+                    <p class="text-center m-2">Haz click aquí para saber como salieron los partidos del último fin de
+                        semana</p>
+                    <a href="./docs/proximafecha.pdf"><img src="./img/agenda.png" alt="proxima fecha horarios"></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-xl-3 cajaHija">
-                    <h4 class="text-center">Canchas</h4>
-                    <ul class="canchasLista">
-                        <li>Coronel Pringles:</li>
-                        <p>Balneario Municipal - Lorenzo D Ippolito 350, Coronel Pringles, Provincia de Buenos Aires</p>
-                        <li>Club Independiente de Puán:</li>
-                        <p>Islas Malvinas esq.Brasil, Puán, Provincia de Buenos Aires</p>
+                    <h2 class="text-center m-1">Canchas</h2>
+                    <ul class="canchasLista m-2 p-2">
+                        <li class="lugar">Coronel Pringles:</li>
+                        <li>Balneario Municipal - Lorenzo D Ippolito 350, Coronel Pringles, Provincia de Buenos Aires
+                        </li>
+                        <li class="lugar">Club Independiente de Puán:</li>
+                        <li>Islas Malvinas esq.Brasil, Puán, Provincia de Buenos Aires</li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-xl-3 cajaHija">
-                    <h4 class="text-center">Pregunta de la semana</h4>
-                    <p class="pregunta">¿Cuando podemos sancionar corner corto?</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Falta intencional dentro del área a un jugador que tiene posesion de la pelota u oportunidad
-                            de jugarla
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Falta no intencional dentro del área por parte de la defensa
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary boton">Grabar</button>
-                    <button type="reset" class="btn btn-primary boton">Borrar</button>
-                    <!--Formulario sin bootstrap
-                        <form action="">
-                        <div class="quiz">
-                        <input class="radio" type="radio" name="resp" value="1"/><label for="1"> Falta intencional dentro del área a un jugador que tiene posesion de la pelota u oportunidad de jugarla</label>
+                    <h2 class="text-center m-1 p-1">Pregunta de la semana</h2>
+                    <p class="pregunta text-center">¿Cuando podemos sancionar corner corto?</p>
+                    <form action="" method="POST">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Falta intencional dentro del área a un jugador que tiene posesion de la pelota u
+                                oportunidad
+                                de jugarla
+                            </label>
                         </div>
-                        <div class="quiz">
-                        <input class="radio" name="resp" type="radio" value="2"/><label for="2"> Falta no intencional dentro del área por parte de la defensa</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Falta no intencional dentro del área por parte de la defensa
+                            </label>
                         </div>
-                        <input class="boton" type="submit" value="Grabar">
-                        <input class="boton" type="reset" value="Borrar">
+                        <button type="submit" class="m-1 btn btn-primary boton">Grabar</button>
+                        <button type="reset" class="m-1 btn btn-primary boton">Borrar</button>
                     </form>
-                    -->
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+    <footer class="pie m-3 p-3">
+        <img class="logoSudoF m-1 p-1" src="./img/logosudo.png" alt="logo sudoeste">
+        <div class="linkUtiles">
+            <h5 class="text-center">Links Útiles</h5>
+            <a href="http://www.cahockey.org.ar/" target="_blank"><img class="cah" src="./img/CAH.png"
+                    alt="Confederacion Argentina"></a>
+            <a href="https://www.panamhockey.org/es" target="_blank"><img class="pahf" src="./img/PAHF.png"
+                    alt="Federación Panamericana"></a>
+            <a href="https://www.fih.hockey/" target="_blank"><img class="fih" src="./img/FIH.png"
+                    alt="Federación Internacional"></a>
+        </div>
+        <div class="redes">
+            <h5 class="text-center">Redes</h5>
+            <a href="https://www.instagram.com/arbitrosfhsb/" target="_blank"><img class="instagram"
+                    src="./img/instagram.png" alt="Instagram"></a>
+            <a href="http://www.hockeydelsudoeste.com.ar/" target="_blank"><img class="fhsb" src="./img/FHSB.png"
+                    alt="Web Sudoeste"></a>
+            <a href="https://www.facebook.com/hockeydelsudoeste" target="_blank"><img class="facebook"
+                    src="./img/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
-<hr>
-<footer class="pie">
-    <img class="logoSudoF" src="./img/logosudo.png" alt="logo sudoeste">
-    <div class="linkUtiles">
-        <h5>Links Útiles</h5>
-        <a href="http://www.cahockey.org.ar/" target="_blank"><img class="cah" src="./img/CAH.png"
-                alt="Confederacion Argentina"></a>
-        <a href="https://www.panamhockey.org/es" target="_blank"><img class="pahf" src="./img/PAHF.png"
-                alt="Federación Panamericana"></a>
-        <a href="https://www.fih.hockey/" target="_blank"><img class="fih" src="./img/FIH.png" alt="Federación Internacional"></a>
-    </div>
-    <div class="redes">
-        <h5>Redes</h5>
-        <a href="https://www.instagram.com/arbitrosfhsb/" target="_blank"><img class="instagram"
-                src="./img/instagram.png" alt="Instagram"></a>
-        <a href="http://www.hockeydelsudoeste.com.ar/" target="_blank"><img class="fhsb" src="./img/FHSB.png"
-                alt="Web Sudoeste"></a>
-        <a href="https://www.facebook.com/hockeydelsudoeste" target="_blank"><img class="facebook"
-                src="./img/facebook.png" alt="Facebook"></a>
-    </div>
-</footer>
 
 </html>

@@ -1,0 +1,11 @@
+.nosotros{
+    display: flex;
+    background: $colorCajas;
+    div{
+        justify-content: space-between;
+        h3{
+            @include titulos();
+            text-align: center;
+        }
+    };
+}

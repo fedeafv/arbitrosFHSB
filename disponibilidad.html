@@ -7,70 +7,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <meta name="description"
+        content="Pasar disponibilidad y consultar la agenda del torneo local de la Federación de Hockey del Sudoeste Bonaerense">
+    <meta name="keywords" content="disponibilidad, agenda,reglamentos, hockey">
+    <link rel="stylesheet" href="./css/estilossass.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Arbitros FHSB</title>
+    <title>Árbitros FHSB | Disponibilidad</title>
 </head>
 
 <body>
     <header>
-        <div class="titulo">
-            <img class="logoSudoH" src="./img/logosudo.png" alt="logo sudoeste">
+        <div class="titulo m-3 p-3">
+            <a href="index.html"><img src="./img/logosudo.png" class="logoSudoF" alt="logo sudoeste"></a>
             <h1>Árbitros de la Federación de Hockey del Sudoeste Bonaerense</h1>
         </div>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="disponibilidad.html">Portal Árbitros</a></li>
-                <li><a href="descargas.html">Descargas</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="torneos.html">Agenda</a></li>
+            <ul class="nav nav-pills nav-fill menu">
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="disponibilidad.html">Portal Árbitros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="descargas.html">Descargas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-2" href="torneos.html">Agenda</a>
+                </li>
             </ul>
         </nav>
-    </header>
-    <hr>
-    <main>
-        <div class="sesion">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Iniciar sesion</button>
-            </form>
+        <h2 class="text-center m-3">Clubes afiliados</h2>
+        <div class="clubes m-3">
+            <img src="./img/alumni.png" alt="Club Alumni Coronel Pringles">
+            <img src="./img/boca.png" alt="Club Boca Juniors Coronel Suarez">
+            <img src="./img/byn.png" alt="Centro Blanco y Negro Coronel Suarez">
+            <img src="./img/cai.png" alt="Club Atlético Independiente de Puán">
+            <img src="./img/carhue.png" alt="Club Deportivo Sarmiento de Carhué">
+            <img src="./img/cds.png" alt="Club Deportivo Sarmiento de Coronel Suarez">
+            <img src="./img/CEF.png" alt="CEF 83 Pigüé">
+            <img src="./img/ceibo.png" alt="Club Ceibo-Comercio CASBAS-Guaminí">
+            <img src="./img/huang.png" alt="Club Huanguelén">
+            <img src="./img/pelota.png" alt="Club de Pelota Coronel Pringles">
+            <img src="./img/rugby.png" alt="Coronel Suarez Rugby Hockey Club">
+            <img src="./img/alem.png" alt="Club Alem Coronel Pringles">
+            <img src="./img/almaceneros.png" alt="Club Almaceneros Coronel Pringles">
+            <img src="./img/peñarol.png" alt="Club Peñarol Pigüé">
+            <img src="./img/saav.png" alt="Club San Martín de Saavedra">
+            <img src="./img/progreso.png" alt="Club El Progreso Coronel Suarez">
         </div>
+    </header>
+    <main>
+        <section>
+            <div class="sesion p-3 m-3 col-sm-4">
+                <h2>Inicia Sesión</h2>
+                <form action="disponibilidadbis.html" POST="">
+                    <div class="dni mb-3">
+                        <label for="exampleInputEmail1" class="form-label">N° de Documento</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Ingresar DNI sin puntos.</div>
+                    </div>
+                    <div class="pass mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn boton p-3">Iniciar sesion</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="pie m-3 p-3">
+        <img class="logoSudoF m-1 p-1" src="./img/logosudo.png" alt="logo sudoeste">
+        <div class="linkUtiles">
+            <h5 class="text-center">Links Útiles</h5>
+            <a href="http://www.cahockey.org.ar/" target="_blank"><img class="cah" src="./img/CAH.png"
+                    alt="Confederacion Argentina"></a>
+            <a href="https://www.panamhockey.org/es" target="_blank"><img class="pahf" src="./img/PAHF.png"
+                    alt="Federación Panamericana"></a>
+            <a href="https://www.fih.hockey/" target="_blank"><img class="fih" src="./img/FIH.png"
+                    alt="Federación Internacional"></a>
+        </div>
+        <div class="redes">
+            <h5 class="text-center">Redes</h5>
+            <a href="https://www.instagram.com/arbitrosfhsb/" target="_blank"><img class="instagram"
+                    src="./img/instagram.png" alt="Instagram"></a>
+            <a href="http://www.hockeydelsudoeste.com.ar/" target="_blank"><img class="fhsb" src="./img/FHSB.png"
+                    alt="Web Sudoeste"></a>
+            <a href="https://www.facebook.com/hockeydelsudoeste" target="_blank"><img class="facebook"
+                    src="./img/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
 </body>
-<hr>
-<footer class="pie">
-    <img class="logoSudoF" src="./img/logosudo.png" alt="logo sudoeste">
-    <div class="linkUtiles">
-        <h5>Links Útiles</h5>
-        <a href="http://www.cahockey.org.ar/" target="_blank"><img class="cah" src="./img/CAH.png"
-                alt="Confederacion Argentina"></a>
-        <a href="https://www.panamhockey.org/es" target="_blank"><img class="pahf" src="./img/PAHF.png"
-                alt="Federación Panamericana"></a>
-        <a href="https://www.fih.hockey/" target="_blank"><img class="fih" src="./img/FIH.png"
-                alt="Federación Internacional"></a>
-    </div>
-    <div class="redes">
-        <h5>Redes</h5>
-        <a href="https://www.instagram.com/arbitrosfhsb/" target="_blank"><img class="instagram"
-                src="./img/instagram.png" alt="Instagram"></a>
-        <a href="http://www.hockeydelsudoeste.com.ar/" target="_blank"><img class="fhsb" src="./img/FHSB.png"
-                alt="Web Sudoeste"></a>
-        <a href="https://www.facebook.com/hockeydelsudoeste" target="_blank"><img class="facebook"
-                src="./img/facebook.png" alt="Facebook"></a>
-    </div>
-</footer>
 
 </html>
