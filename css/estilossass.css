@@ -33,7 +33,6 @@ header .titulo {
   align-items: center;
 }
 header .titulo img {
-  margin: 10px;
   width: 60%;
   height: 60%;
 }
@@ -80,7 +79,6 @@ nav .menu li a:hover {
   font-weight: bold;
   background: linear-gradient(to left, #13f0ae, #4ebd4e);
   border-radius: 10%;
-  transform: scale(1.1, 1.1);
 }
 
 .row .cajaHija {
@@ -205,41 +203,61 @@ nav .menu li a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 660px) {
+  header .titulo img {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
-  header div {
+  header .titulo {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
     align-items: center;
   }
-  header div img {
+  header .titulo img {
+    width: 40%;
+    height: 40%;
+  }
+  header .titulo img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  header .titulo h1 {
+    font-size: 90%;
+    text-align: center;
+  }
+  header nav .menu li a {
+    font-size: small;
+  }
+  footer .cah {
+    width: 15%;
+    height: 15%;
+  }
+  footer .pahf {
     width: 20%;
     height: 20%;
   }
-  header div img:hover {
-    transform: scale(1.1, 1.1);
+  footer .fih {
+    width: 20%;
+    height: 20%;
   }
-  header div h1 {
-    font-size: 2rem;
-    text-align: center;
+  footer .instagram {
+    width: 5%;
+    height: 5%;
   }
-  .cah {
-    width: 2rem;
-    height: 1rem;
+  footer .fhsb {
+    width: 20%;
+    height: 20%;
   }
-  .pahf {
-    width: 3rem;
-    height: 1.5rem;
-  }
-  .fih {
-    width: 3rem;
-    height: 1rem;
+  footer .facebook {
+    width: 10%;
+    height: 10%;
   }
 }
 @media screen and (max-width: 1024px) {
   .logoSudoH {
-    width: 4rem;
-    height: 5rem;
+    width: 40%;
+    height: 40%;
     margin: 10px;
   }
   h1 {

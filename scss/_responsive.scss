@@ -1,3 +1,13 @@
+@media screen and (max-width: 660px) {
+    header {
+        .titulo {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         .titulo {
@@ -5,34 +15,62 @@
             justify-content: space-evenly;
             flex-wrap: wrap-reverse;
             align-items: center;
-    
+
             img {
-                width: 20%;
-                height: 20%;
-                &:hover{
-                    transform: scale(1.1,1.1);
+                width: 40%;
+                height: 40%;
+
+                &:hover {
+                    transform: scale(1.1, 1.1);
                 }
             }
-    
+
             h1 {
-                font-size: 1rem;
+                font-size: 90%;
                 text-align: center;
             }
         }
-    }
-    .cah {
-        width: 2rem;
-        height: 1rem;
+
+        nav {
+            .menu {
+                li {
+                    a {
+                        font-size: small;
+                    }
+                }
+            }
+        }
     }
 
-    .pahf {
-        width: 3rem;
-        height: 1.5rem;
-    }
+    footer {
+        .cah {
+            width: 15%;
+            height: 15%;
+        }
 
-    .fih {
-        width: 3rem;
-        height: 1rem;
+        .pahf {
+            width: 20%;
+            height: 20%;
+        }
+
+        .fih {
+            width: 20%;
+            height: 20%;
+        }
+        .instagram {
+            width: 5%;
+            height: 5%;
+        }
+        
+        .fhsb {
+            width: 20%;
+            height: 20%;
+        }
+        
+        .facebook {
+            width: 10%;
+            height: 10%;
+        }
     }
 }
 
