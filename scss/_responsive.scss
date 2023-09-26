@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
     header {
-        div {
+        .titulo {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap-reverse;
@@ -15,7 +15,7 @@
             }
     
             h1 {
-                font-size: 2rem;
+                font-size: 1rem;
                 text-align: center;
             }
         }
@@ -38,8 +38,8 @@
 
 @media screen and (max-width: 1024px) {
     .logoSudoH {
-        width: 4rem;
-        height: 5rem;
+        width: 40%;
+        height: 40%;
         margin: 10px;
     }
 
