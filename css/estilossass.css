@@ -116,75 +116,61 @@ nav .menu li a:hover {
   width: 100%;
 }
 
-.pie {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
+footer {
   background: linear-gradient(to left, #13f0ae, #4ebd4e);
 }
-
-.logoSudoF {
-  width: 4.8rem;
-  height: 5rem;
+footer .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.pie h3 {
-  font-size: 18px;
-  text-align: center;
+footer .container .row .logoSudoF {
+  width: 30%;
+  height: 30%;
 }
-
-.cah {
-  align-items: baseline;
+footer .container .row .linksUtiles .cah {
   margin: 5px;
   padding-left: 20px;
   height: 4rem;
 }
-.cah:hover {
+footer .container .row .linksUtiles .cah:hover {
   transform: scale(1.1, 1.1);
 }
-
-.pahf {
-  align-items: baseline;
+footer .container .row .linksUtiles .pahf {
   margin: 5px;
   padding-left: 20px;
   height: 3rem;
 }
-.pahf:hover {
+footer .container .row .linksUtiles .pahf:hover {
   transform: scale(1.1, 1.1);
 }
-
-.fih {
-  align-items: baseline;
+footer .container .row .linksUtiles .fih {
   margin: 5px;
   padding-left: 20px;
   height: 3rem;
 }
-.fih:hover {
+footer .container .row .linksUtiles .fih:hover {
   transform: scale(1.1, 1.1);
 }
-
-.instagram {
+footer .container .row .redes .instagram {
   width: 30px;
-  margin: 0 0.2rem;
+  margin: 0 22px;
 }
-.instagram:hover {
+footer .container .row .redes .instagram:hover {
   transform: scale(1.1, 1.1);
 }
-
-.fhsb {
+footer .container .row .redes .fhsb {
   width: 125px;
-  margin: 0 0.2rem;
+  margin: 0 22px;
 }
-.fhsb:hover {
+footer .container .row .redes .fhsb:hover {
   transform: scale(1.1, 1.1);
 }
-
-.facebook {
+footer .container .row .redes .facebook {
   width: 60px;
-  margin: 0 0.2rem;
+  margin: 0 22px;
 }
-.facebook:hover {
+footer .container .row .redes .facebook:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -277,12 +263,6 @@ nav .menu li a:hover {
   }
   .logoSudoF {
     display: none;
-  }
-  .documentos {
-    font-size: 10px;
-  }
-  .documentos h5 {
-    font-size: 15px;
   }
 }
 .listaDescargas li {

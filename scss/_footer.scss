@@ -1,63 +1,64 @@
-
-.pie {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+footer {
     background:$colorCajas;
-}
+    .container {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-.logoSudoF {
-    width: 4.8rem;
-    height: 5rem;
-}
+            .logoSudoF {
+                width: 30%;
+                height: 30%;
+            }
 
-.pie h3 {
-    font-size: 18px;
-    text-align: center;
-}
+            .linksUtiles {
+                .cah {
+                    @include logosPie(5px, 20px, 4rem);
 
-.cah {
-    @include logosPie(baseline,5px,20px,4rem);
-    &:hover{
-        transform: scale(1.1,1.1);
-    }
-}
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
 
-.pahf{
-    @include logosPie(baseline,5px,20px,3rem);
-    &:hover{
-        transform: scale(1.1,1.1);
-    }
-}
+                .pahf {
+                    @include logosPie(5px, 20px, 3rem);
 
-.fih{
-    @include logosPie(baseline,5px,20px,3rem);
-    &:hover{
-        transform: scale(1.1,1.1);
-    }
-}
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
 
-.instagram {
-    width: 30px;
-    margin: 0 0.2rem;
-    &:hover{
-        transform: scale(1.1,1.1);
-    }
-}
+                .fih {
+                    @include logosPie(5px, 20px, 3rem);
 
-.fhsb {
-    width: 125px;
-    margin: 0 0.2rem;
-    &:hover{
-        transform: scale(1.1,1.1);
-    }
-}
-
-.facebook {
-    width: 60px;
-    margin: 0 0.2rem;
-    &:hover{
-        transform: scale(1.1,1.1);
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+            .redes {
+                .instagram {
+                    width: 30px;
+                    margin:0 22px;
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+                .fhsb {
+                    width: 125px;
+                    margin:0 22px;
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+                .facebook {
+                    width: 60px;
+                    margin:0 22px;
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+        }
     }
 }

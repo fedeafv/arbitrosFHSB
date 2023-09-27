@@ -1,5 +1,4 @@
-@mixin logosPie ($alinearLogo, $margen, $padding, $alto){
-    align-items: $alinearLogo;
+@mixin logosPie ($margen, $padding, $alto){
     margin: $margen;
     padding-left: $padding;
     height: $alto;
