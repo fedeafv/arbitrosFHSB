@@ -154,21 +154,21 @@ footer .container .row .linksUtiles .fih:hover {
 }
 footer .container .row .redes .instagram {
   width: 30px;
-  margin: 0 22px;
+  margin: 0 20px;
 }
 footer .container .row .redes .instagram:hover {
   transform: scale(1.1, 1.1);
 }
 footer .container .row .redes .fhsb {
   width: 125px;
-  margin: 0 22px;
+  margin: 0 20px;
 }
 footer .container .row .redes .fhsb:hover {
   transform: scale(1.1, 1.1);
 }
 footer .container .row .redes .facebook {
   width: 60px;
-  margin: 0 22px;
+  margin: 0 20px;
 }
 footer .container .row .redes .facebook:hover {
   transform: scale(1.1, 1.1);
@@ -215,30 +215,36 @@ footer .container .row .redes .facebook:hover {
   header nav .menu li a {
     font-size: small;
   }
-  footer .cah {
-    width: 15%;
-    height: 15%;
-  }
-  footer .pahf {
-    width: 20%;
-    height: 20%;
-  }
-  footer .fih {
-    width: 20%;
-    height: 20%;
-  }
-  footer .instagram {
-    width: 5%;
-    height: 5%;
-  }
-  footer .fhsb {
-    width: 20%;
-    height: 20%;
-  }
-  footer .facebook {
-    width: 10%;
-    height: 10%;
-  }
+  /*footer {
+      .cah {
+          width: 15%;
+          height: 15%;
+      }
+
+      .pahf {
+          width: 20%;
+          height: 20%;
+      }
+
+      .fih {
+          width: 20%;
+          height: 20%;
+      }
+      .instagram {
+          width: 5%;
+          height: 5%;
+      }
+
+      .fhsb {
+          width: 20%;
+          height: 20%;
+      }
+
+      .facebook {
+          width: 10%;
+          height: 10%;
+      }
+  }*/
 }
 @media screen and (max-width: 1024px) {
   .logoSudoH {
@@ -249,18 +255,22 @@ footer .container .row .redes .facebook:hover {
   h1 {
     font-size: 15px;
   }
-  .cah {
-    width: 4rem;
-    height: 2.5rem;
+  /*    .cah {
+      width: 4rem;
+      height: 2.5rem;
   }
+
   .pahf {
-    width: 7rem;
-    height: 2.5rem;
+      width: 7rem;
+      height: 2.5rem;
   }
+
   .fih {
-    width: 6rem;
-    height: 2.5rem;
-  }
+      width: 6rem;
+      height: 2.5rem;
+  }*/
+}
+@media screen and (max-width: 1199px) {
   .logoSudoF {
     display: none;
   }
