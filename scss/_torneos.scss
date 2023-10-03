@@ -4,7 +4,7 @@
     .row {
         background: $colorCajas;
         margin: 3px;
-        h2 {
+        h3 {
             @include titulos();
         }
 

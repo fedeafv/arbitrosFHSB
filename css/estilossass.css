@@ -81,29 +81,28 @@ nav .menu li a:hover {
   border-radius: 10%;
 }
 
-.row .cajaHija {
+.row .cajaProxFecha, .row .cajaPregunta, .row .cajaCanchas {
   background: linear-gradient(to left, #13f0ae, #4ebd4e);
 }
-.row .cajaHija h2 {
+.row .cajaProxFecha h3, .row .cajaPregunta h3, .row .cajaCanchas h3 {
   background: linear-gradient(to right, rgba(174, 185, 187, 0.7960784314), #4ebd4e);
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
 }
-.row .cajaHija p {
+.row .cajaProxFecha p, .row .cajaPregunta p, .row .cajaCanchas p {
   font-size: 0.8rem;
 }
-.row .cajaHija img {
+.row .cajaProxFecha img, .row .cajaPregunta img, .row .cajaCanchas img {
   width: 4rem;
   height: 4rem;
   display: block;
   margin: auto;
 }
-.row .cajaHija label {
+.row .cajaProxFecha label, .row .cajaPregunta label, .row .cajaCanchas label {
   font-size: small;
   margin: 1px;
 }
-
 .canchasLista {
   text-decoration: none;
   list-style-type: none;
@@ -127,6 +126,9 @@ footer .container .row {
 footer .container .row .logoSudoF {
   width: 30%;
   height: 30%;
+}
+footer .container .row h4 {
+  font-size: 20px;
 }
 footer .container .row .linksUtiles .cah {
   margin: 5px;
@@ -296,11 +298,8 @@ footer .container .row .redes .facebook:hover {
 .cajaDescarga {
   background: linear-gradient(to left, #13f0ae, #4ebd4e);
 }
-.cajaDescarga h2 {
-  background: linear-gradient(to right, rgba(174, 185, 187, 0.7960784314), #4ebd4e);
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
+.cajaDescarga h3 {
+  font-size: 1.5rem;
 }
 .cajaDescarga p {
   font-size: 0.8rem;
@@ -309,7 +308,7 @@ footer .container .row .redes .facebook:hover {
 .sesion {
   background: linear-gradient(to left, #13f0ae, #4ebd4e);
 }
-.sesion h2 {
+.sesion h3 {
   font-weight: bold;
 }
 .sesion input {
@@ -328,7 +327,7 @@ footer .container .row .redes .facebook:hover {
   background: linear-gradient(to left, #13f0ae, #4ebd4e);
   margin: 3px;
 }
-.agenda .row h2 {
+.agenda .row h3 {
   background: linear-gradient(to right, rgba(174, 185, 187, 0.7960784314), #4ebd4e);
   font-size: 1.3rem;
   font-weight: bold;

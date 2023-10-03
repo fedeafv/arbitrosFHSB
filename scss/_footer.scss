@@ -10,7 +10,9 @@ footer {
                 width: 30%;
                 height: 30%;
             }
-
+            h4{
+                font-size: 20px;
+            }
             .linksUtiles {
                 .cah {
                     @include logosPie(5px, 20px, 4rem);

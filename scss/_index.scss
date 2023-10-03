@@ -1,8 +1,8 @@
 .row {
-    .cajaHija {
+    .cajaProxFecha {
         background: $colorCajas;
 
-        h2 {
+        h3 {
             @include titulos();
         }
 
@@ -18,6 +18,12 @@
             font-size: small;
             margin: 1px;
         }
+    }
+    .cajaCanchas {
+        @extend .cajaProxFecha;
+    }
+    .cajaPregunta {
+        @extend .cajaProxFecha;
     }
 }
 
