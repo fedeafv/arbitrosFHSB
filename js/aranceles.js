@@ -1,35 +1,38 @@
-const let precioSuper= 871;
-const let ltsPrimera= 14;
-const let ltsSegunda= 14;
-const let ltsSexta= 12;
-const let ltsSeptima= 10;
-const let ltsCaballeros= 15;
-let categoria;
-//Calculo de aranceles por arbitro
-let primera = 'NO';
-let segunda = 'NO';
-let sexta = 'NO';
-let septima = 'NO';
-let caballeros = 'NO';
+let opcionDiv= parseInt(prompt('Consultar aranceles en cancha:\n1- Primera División\n2- Sexta División(Sub-16)\n3- Séptima División\n4- Segunda División\n5-Caballeros Primera\n0-Salir'));
+let total=0;
 
-alert("Bienvenido colega! Aca podrás calcular tus aranceles para este fin de semana");
-primera = text.toUpperCase(prompt("Tenes que arbitrar Primera división este finde semana? (SI/NO)"));
-if(primera = 'SI'){
-    let cantPrimera=parseInt(prompt('Cuántos partidos (Primera división)?'));
+while(opcionDiv!=0){
+    switch(opcionDiv){
+        case 1:
+            calcularArancel(12194,'Primera');
+            break;
+        case 2:
+            calcularArancel(10452,'Sexta');
+            break;
+        case 3:
+            calcularArancel(8710,'Séptima');
+            break;
+        case 4:
+            calcularArancel(12194,'Segunda');
+            break;
+        case 5:
+            calcularArancel(13065,'Caballeros');
+            break;
+        default:
+            alert('Código Inválido');
+    }
+    opcionDiv= parseInt(prompt('Consultar aranceles en cancha:\n1- Primera División\n2- Sexta División(Sub-16)\n3- Séptima División\n4- Segunda División\n5-Caballeros Primera\n0-Salir'));
 }
-segunda = text.toUpperCase(prompt("Tenes que arbitrar Segunda división este finde semana? (SI/NO)"));
-if(segunda = 'SI'){
-    let cantSegunda=parseInt(prompt('Cuántos partidos (Segunda división)?'));
+if(total==0){
+    alert('¡Hasta luego!');
+}else if(opcionDiv==0){
+        alert('Cobrarás en total $'+total+' este fin de semana');
+    }
+
+
+
+function calcularArancel(valor,division){
+    let cant=prompt("¿Cuántos partidos de "+division+" estás designado?");
+    total+=cant*valor;
 }
-sexta = text.toUpperCase(prompt("Tenes que arbitrar Sexta división este finde semana? (SI/NO)"));
-if(sexta = 'SI'){
-    let cantSexta=parseInt(prompt('Cuántos partidos (Sexta división)?'));
-}
-septima = text.toUpperCase(prompt("Tenes que arbitrar Septima división este finde semana? (SI/NO)"));
-if(septima = 'SI'){
-    let cantSeptima=parseInt(prompt('Cuántos partidos (Septima división)?'));
-}
-caballeros = text.toUpperCase(prompt("Tenes que arbitrar Caballeros este finde semana? (SI/NO)"));
-if(caballeros = 'SI'){
-    let cantCaballeros=parseInt(prompt('Cuántos partidos (Caballeros)?'));
-}
+    
