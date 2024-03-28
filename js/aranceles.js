@@ -31,6 +31,7 @@ if(total==0){
 
 
 
+    
 function calcularArancel(valor,division){
     let cant=prompt("¿Cuántos partidos de "+division+" estás designado?");
     total+=cant*valor;
