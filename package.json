@@ -1,7 +1,6 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -14,5 +13,6 @@
   "dependencies": {
     "g": "^2.0.1",
     "sass": "^1.66.1"
-  }
+  },
+  "description": ""
 }

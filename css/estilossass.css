@@ -319,25 +319,12 @@ footer .container .row .redes .facebook:hover {
   background: linear-gradient(to left, #13f0ae, #4ebd4e);
 }
 
-.agenda {
+#division {
   display: flex;
   justify-content: space-around;
 }
-.agenda .row {
-  background: linear-gradient(to left, #13f0ae, #4ebd4e);
-  margin: 3px;
-}
-.agenda .row h3 {
-  background: linear-gradient(to right, rgba(174, 185, 187, 0.7960784314), #4ebd4e);
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
-}
-.agenda .row img {
-  width: 4rem;
-  height: 4rem;
-  display: block;
-  margin: auto;
+#division p {
+  font-style: inherit;
 }
 
 /*# sourceMappingURL=estilossass.css.map */

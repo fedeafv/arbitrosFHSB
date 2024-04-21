@@ -1,39 +1,65 @@
-let opcionDiv= parseInt(prompt('Consultar aranceles en cancha:\n1- Primera División\n2- Sexta División(Sub-16)\n3- Séptima División\n4- Segunda División\n5-Caballeros Primera\n0-Salir'));
-let total=0;
+let NaftaSuper = 971;
+let partidosTot = [];
+let guardarPartidos = (key, value) =>{localStorage.setItem(key,value)};
+let carritoViejo =JSON.parse(localStorage.getItem("partidosTotal"));
+console.log(carritoViejo);
 
-while(opcionDiv!=0){
-    switch(opcionDiv){
-        case 1:
-            calcularArancel(12194,'Primera');
-            break;
-        case 2:
-            calcularArancel(10452,'Sexta');
-            break;
-        case 3:
-            calcularArancel(8710,'Séptima');
-            break;
-        case 4:
-            calcularArancel(12194,'Segunda');
-            break;
-        case 5:
-            calcularArancel(13065,'Caballeros');
-            break;
-        default:
-            alert('Código Inválido');
+if(localStorage.getItem("partidosTotal")){
+    for(objeto of carritoViejo){
+        partidosTot.push(objeto);
     }
-    opcionDiv= parseInt(prompt('Consultar aranceles en cancha:\n1- Primera División\n2- Sexta División(Sub-16)\n3- Séptima División\n4- Segunda División\n5-Caballeros Primera\n0-Salir'));
 }
-if(total==0){
-    alert('¡Hasta luego!');
-}else if(opcionDiv==0){
-        alert('Cobrarás en total $'+total+' este fin de semana');
+const cardsDivision = [
+  { id: 1, div: "Primera División", precio: 14*NaftaSuper},
+  { id: 2, div: "Sexta División", precio: 12*NaftaSuper},
+  { id: 3, div: "Septima División", precio: 10*NaftaSuper},
+  { id: 4, div: "Segunda División", precio: 14*NaftaSuper},
+  { id: 5, div: "División Caballeros", precio: 15*NaftaSuper},
+];
+
+const division = document.getElementById("division");
+const tablaTot =document.getElementById('carrito');
+
+for (const cards of cardsDivision) {
+    division.innerHTML += `
+    <div class="card cajaDescarga m-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">${cards.div}</h5>
+            <p class="card-text">Agregar un partido de ${cards.div} Precio: $${cards.precio}</p>
+            <button class="btn boton btn-primary seleccion" id=${cards.id}>Agregar</button>
+        </div>
+    </div> `;
+}
+const botonSeleccion = document.getElementsByClassName('seleccion');
+for(const boton of botonSeleccion){
+    boton.addEventListener('click',()=>{
+        console.log('Hiciste click en:'+boton.id);
+        const aTotalPartidos = cardsDivision.find(divi =>divi.id == boton.id);
+        console.log(aTotalPartidos);
+        totalPartidos(aTotalPartidos);
+    })
+}
+armarCarrito();
+
+function totalPartidos(partidoAgregado){
+    partidosTot.push(partidoAgregado);
+    console.table(partidosTot);
+    tablaTot.innerHTML += `
+        <tr>
+            <td>${partidoAgregado.id}</td>
+            <td>${partidoAgregado.div}</td>
+            <td>${partidoAgregado.precio}</td>
+        </tr>`
+    guardarPartidos("partidosTotal",JSON.stringify(partidosTot));
+}
+
+function armarCarrito(){
+    for(partido of partidosTot){
+        tablaTot.innerHTML += `
+        <tr>
+            <td>${partido.id}</td>
+            <td>${partido.div}</td>
+            <td>${partido.precio}</td>
+        </tr>`
     }
-
-
-
-    
-function calcularArancel(valor,division){
-    let cant=prompt("¿Cuántos partidos de "+division+" estás designado?");
-    total+=cant*valor;
 }
-    
