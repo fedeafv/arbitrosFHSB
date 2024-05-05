@@ -1,0 +1,9 @@
+{
+    "division": [
+    { "id": 1, "div": "Primera División", "precio": 14},
+    { "id": 2, "div": "Sexta División", "precio": 12},
+    { "id": 3, "div": "Septima División", "precio": 10},
+    { "id": 4, "div": "Segunda División", "precio": 14},
+    { "id": 5, "div": "División Caballeros", "precio": 15}
+    ]
+}
