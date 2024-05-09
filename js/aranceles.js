@@ -29,6 +29,13 @@ fetch(URLDIVISIONES)
         for(const boton of botonSeleccion){
             boton.addEventListener('click',()=>{
                 const aTotalPartidos = cardsDivision.find(divi =>divi.id == boton.id);
+                Swal.fire({
+                    title: "Partido agregado",
+                    text: "Se agregado un partido de "+ aTotalPartidos.div,
+                    imageUrl: "https://pbs.twimg.com/profile_images/999412529448140801/rhCWsRqL_400x400.jpg",
+                    confirmButtonColor: "#4ebd4e",
+                    imageHeight: "100px", 
+                });
                 totalPartidos(aTotalPartidos);
             })
         }
@@ -95,10 +102,20 @@ function vaciarCarrito(){
 
 //Evento para el boton de resetear calculo
 terminar.onclick = ()=>{
-    Swal.fire({
-        title: "Datos borrados",
-        text: "Tus calculos han sido reseteados",
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    Toast.fire({
         icon: "warning",
+        title: "Carrito borrado!"
     });
     vaciarCarrito();
 }
